@@ -64,6 +64,7 @@ function english() {
     CURRENT_LANG = 'en';
     storeCurrentLang();
 
+    $('head > title').textContent = 'Notes';
     $('#lang-notes-heading').innerText = 'Notes';
     $('#lang-notes').innerText = 'Notes';
     $('#lang-archive').innerText = 'Archive';
@@ -93,6 +94,7 @@ function german() {
     CURRENT_LANG = 'de';
     storeCurrentLang();
 
+    $('head > title').textContent = 'Notizen';
     $('#lang-notes-heading').innerText = 'Notizen';
     $('#lang-notes').innerText = 'Notizen';
     $('#lang-archive').innerText = 'Archiv';
@@ -122,6 +124,7 @@ function spanish() {
     CURRENT_LANG = 'es';
     storeCurrentLang();
 
+    $('head > title').textContent = 'Notas';
     $('#lang-notes-heading').innerText = 'Notas';
     $('#lang-notes').innerText = 'Notas';
     $('#lang-archive').innerText = 'Archivo';
@@ -151,6 +154,7 @@ function portuguese() {
     CURRENT_LANG = 'pg';
     storeCurrentLang();
 
+    $('head > title').textContent = 'Notas';
     $('#lang-notes-heading').innerText = 'Notas';
     $('#lang-notes').innerText = 'Notas';
     $('#lang-archive').innerText = 'Arquivo';
@@ -180,6 +184,7 @@ function french() {
     CURRENT_LANG = 'fr';
     storeCurrentLang();
 
+    $('head > title').textContent = 'Remarques';
     $('#lang-notes-heading').innerText = 'Remarques';
     $('#lang-notes').innerText = 'Remarques';
     $('#lang-archive').innerText = 'Archive';
