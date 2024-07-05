@@ -1,0 +1,141 @@
+@media(max-width: 1000px) {
+
+}
+
+
+
+@media(max-width: 800px) {
+    nav {
+        position: absolute;
+        height: 70px;
+        width: 100%;
+        bottom: 0;
+        z-index: 9;
+    }
+
+    #navbar {
+        flex-direction: row;
+        padding: unset;
+    }
+
+    .navbar-btn {
+        justify-content: center;
+        border-radius: unset;
+        padding: unset;
+        gap: 20px;
+        height: 100%;
+    }
+
+    header {
+        gap: 0;
+        justify-content: space-around;
+    }
+
+    #menu-and-logo {
+        min-width: unset;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .content {
+        height: calc(100% - 70px);
+    }
+
+    #note-input-wrapper {
+        height: fit-content;
+    }
+
+    #bin-notification-wrapper {
+        margin-bottom: 20px;
+    }
+
+    .opened {
+        width: 90%;
+    }
+
+
+
+    /* HOVERED STUFF */
+
+    #note-addons-wrapper div {
+        cursor: pointer;
+        background-color: var(--clr-bg2-hover);
+    }
+    
+    #note-addons-wrapper div img {
+        filter: brightness(0);
+    }
+
+    #note-addons button {
+        background-color: rgba(95,99,104,0.039);
+    }
+
+    .single-note-container {
+        box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302), 0 1px 3px 1px rgba(60, 64, 67, 0.149);
+    }
+    
+    #single-note-addon-container div img {
+        filter: brightness(0.25) !important;
+    }
+
+    #bin-notification-wrapper button {
+        background-color: rgba(66,133,244,0.039);
+    }
+}
+
+
+
+@media(max-width: 500px) { 
+    #logo img {
+        height: 30px;
+        width: 30px;
+    }
+
+    #menu-and-logo {
+        padding: 10px 15px;
+    }
+
+    #form {
+        gap: 0;
+    } 
+
+    #form button {
+        height: 30px;
+        width: 30px;
+    }
+
+    #form > div {
+        gap: 5px;
+    }
+
+    #settings {
+        height: 40px;
+        width: 40px;
+    }
+
+    #logo span,
+    .navbar-btn span {
+        display: none;
+    }
+
+    #bin-notification-wrapper span {
+        text-align: center;
+        padding: 10px 20px;
+    }
+
+    #bin-notification-wrapper button {
+        margin-left: 0;
+        margin-right: 20px;
+        text-align: center;
+    }
+
+    #empty-archive-container span,
+    #empty-bin-container span {
+        font-size: 1.3rem;
+        padding: 0 20px;
+        text-align: center;
+        line-height: 1.4em;
+    }
+}

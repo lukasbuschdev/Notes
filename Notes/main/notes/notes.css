@@ -1,0 +1,327 @@
+/* NOTES INPUT CONTAINER */
+
+#note-input-wrapper {
+    height: 135px;
+    width: 100%;
+    margin: 32px auto 16px auto;
+}
+
+#note-input-container {
+    width: 80%;
+    max-width: 600px;
+    height: fit-content;
+    background-color: var(--clr-white);
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302), 0 2px 6px 2px rgba(60, 64, 67, 0.149);
+    border: 1px solid var(--clr-border);
+    border-radius: 8px;
+    transition: box-shadow var(--transition-fast);
+}
+
+#note-input-container:focus-within {
+    box-shadow: 0 2px 3px 0 rgba(53, 57, 59, 0.267), 0 3px 7px 3px rgba(46, 49, 51, 0.185);
+    transition: box-shadow var(--transition-fast);
+}
+
+#title-content-wrapper input::placeholder { 
+    color: var(--clr-placeholder-dark);
+}
+
+#note-title-input,
+#note-content-input {
+    width: 100%;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+#note-title-input {
+    height: 44px;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px 15px;
+}
+
+#note-content-input {
+    height: 46px;
+    font-size: 0.875rem;
+    padding: 12px 16px 12px 16px;
+    display: contents;
+}
+
+
+
+/* NOTE ADDONS */
+
+#note-addons {
+    width: 100%;
+    height: 45px;
+    display: none;
+}
+
+#note-addons-wrapper {
+    margin-left: 8px;
+}
+
+#note-addons-wrapper div {
+    height: 40px;
+    width: 40px;
+    border-radius: 999px;
+}
+
+#note-addons-wrapper div:hover {
+    cursor: pointer;
+    background-color: var(--clr-bg2-hover);
+}
+
+#note-addons-wrapper div:hover img {
+    filter: brightness(0);
+}
+
+#note-addons-wrapper div img {
+    height: 20px;
+    width: 20px;
+    object-fit: contain;
+}
+
+#note-addons button {
+    margin-right: 16px;
+    letter-spacing: .01785714em;
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    padding: 8px 24px;
+    color: var(--txt-dark);
+    border-radius: 4px;
+}
+
+#note-addons button:hover {
+    background-color: rgba(95,99,104,0.039);
+}
+
+#note-addons button:active {
+    background-color: rgba(95,99,104,0.161) !important;
+}
+
+
+
+
+
+/* SAVED SINGLE NOTES CONTAINER */
+
+#notes-notes-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: fit-content;
+    background-color: var(--clr-white);
+    padding-bottom: 70px;
+}
+
+.single-note-container {
+    position: relative;
+    height: fit-content;
+    width: 240px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    background-color: var(--clr-white);
+    margin: 8px;
+    box-shadow: 0 1px 2px 0 hsla(206, 6%, 15%, 0.25), 0 1px 3px 1px hsla(206, 6%, 15%, 0.12);
+    transition: box-shadow var(--transition-fast), transform var(--transition-slow), margin var(--transition-slow);
+}
+
+.single-note-container:hover {
+    box-shadow: 0 1px 2px 0 hsla(206, 6%, 35%, 0.45), 0 1px 3px 1px hsla(206, 6%, 35%, 0.3);
+    transition: box-shadow var(--transition-fast);
+}
+
+.single-note-container:hover div img {
+    filter: brightness(0.25) !important;
+    transition: filter var(--transition-medium);
+}
+
+#single-note-title-content-container {
+    min-height: 60px;
+    cursor: default;
+}
+
+#single-note-title,
+#single-note-content,
+#single-note-addon {
+    width: 100%;
+    max-height: 75px;
+    letter-spacing: .00625em;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+}
+
+#single-note-title {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 12px 16px 0 16px;
+    line-height: 1.5rem;
+}
+
+#single-note-content {
+    min-height: 30px;
+    font-size: 0.875rem;
+    padding: 12px 16px;
+    line-height: 1.25rem;
+    word-break: break-word;
+}
+
+#single-note-addon-container {
+    width: 100%;
+    line-height: 26px;
+    padding: 4px 10px;
+}
+
+#single-note-addon-container div {
+    height: 35px;
+    width: 35px;
+    border-radius: 999px;
+}
+
+#single-note-addon-container div img {
+    height: 15px;
+    width: 15px;
+    object-fit: contain;
+    margin: 0 4px;
+    filter: brightness(1);
+    transition: filter var(--transition-medium);
+}
+
+#single-note-addon-container div:hover {
+    cursor: pointer;
+    background-color: var(--clr-bg2-hover);
+}
+
+#single-note-addon-container div:hover img {
+    filter: brightness(0) !important;
+    transition: filter var(--transition-fast);
+}
+
+
+
+/* OPENED NOTE STYLING */
+
+.opened {
+    position: absolute;
+    height: fit-content;
+    width: 70%;
+    z-index: 999;
+}
+
+.opened #single-note-title {
+    font-size: 1.375rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.75rem;
+    padding-bottom: 12px;
+    padding-top: 16px;
+    outline: none;
+}
+
+.opened #single-note-content {
+    letter-spacing: .00625em;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    outline: none;
+    overflow: visible;
+    display: block;
+    text-overflow: unset;
+    max-height: 380px;
+    overflow: auto;
+}
+
+.opened #time-edited-container {
+    width: 100%;
+    height: fit-content;
+    padding-right: 25px;
+    margin-top: 10px;
+}
+
+.opened #time-edited-container span {
+    color: rgba(0, 0, 0, 0.8);
+    letter-spacing: .025em;
+    font-size: .75rem;
+    font-weight: 400;
+    line-height: 1rem;
+}
+
+
+
+/* PALLETE STYLING */
+#palette-container {
+    height: 100vh;
+    width: 100%;
+    z-index: 999;
+}
+
+#color-palette-container {
+    height: fit-content;
+    width: fit-content;
+    padding: 10px 20px;
+    margin: 0 auto 0;
+    background-color: var(--clr-white);
+    border: 1px solid var(--clr-border);
+    border-radius: 8px;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302), 0 1px 3px 1px rgba(60, 64, 67, 0.149);
+    z-index: 999;
+}
+
+.circle {
+    height: 25px;
+    width: 25px;
+    border-radius: 999px;
+    border: 1px solid var(--clr-border);
+}
+
+.circle:hover {
+    cursor: pointer;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.2), 0 1px 3px 1px rgba(60, 64, 67, 0.1);
+}
+
+
+
+/* PALETTE COLORS  */
+
+.white {
+    background-color: var(--clr-white) !important;
+}
+
+.sky {
+    background-color: var(--clr-sky-palette) !important;
+}
+
+.night {
+    background-color: var(--clr-night-palette) !important;
+}
+
+.ocean {
+    background-color: var(--clr-ocean-palette) !important;
+}
+
+.sun {
+    background-color: var(--clr-sun-palette) !important;
+}
+
+.moon {
+    background-color: var(--clr-moon-palette) !important;
+}
+
+.grass {
+    background-color: var(--clr-grass-palette) !important;
+}
+
+.earth {
+    background-color: var(--clr-earth-palette) !important;
+}
+
+.fire {
+    background-color: var(--clr-fire-palette) !important;
+}

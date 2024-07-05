@@ -1,0 +1,58 @@
+.legal-notice-container {
+    padding: 20px 15px;
+}
+
+h1, h2 ,h3 {
+    font-weight: 600;
+    color: var(--txt-gray);
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+p, span , li, a {
+    color: var(--clr-bg-card-dark-mode);
+    font-size: 1rem;
+    line-height: 1.2rem;
+}
+
+li {
+    margin-top: 10px;
+}
+
+.m-elements {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+@media(max-width: 500px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+    
+    h2 {
+        font-size: 1.2rem;
+    }
+    
+    h3 {
+        font-size: 1rem;
+    }
+
+    p, span , li, a {
+        font-size: 0.8rem;
+        word-wrap: break-word;
+    }
+}

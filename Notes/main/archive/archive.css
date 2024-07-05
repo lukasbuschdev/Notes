@@ -1,0 +1,48 @@
+#archive-content-container {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+/* EMPTY ARCHIVE */
+
+#empty-archive-container {
+    height: 75vh;
+    width: 100%;
+    display: none;
+}
+
+#archive-notes-container:empty + #empty-archive-container {
+    display: flex !important;
+}
+
+#empty-archive-container img {
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+    filter: brightness(0.85)
+
+}
+
+#empty-archive-container span {
+    font-size: 1.5rem;
+    color: var(--txt-gray);
+}
+
+
+
+/* ARCHIVE CONTENT */
+
+#archive-notes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: fit-content;
+    width: 100%;
+    padding: 30px 0;
+}
+
+#archive-notes-container:empty {
+    display: none;
+}

@@ -1,0 +1,77 @@
+#settings-card {
+    height: 70vh;
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: var(--clr-white);
+    border-radius: 8px;
+    color: var(--clr-dark);
+    transform: scale(0);
+    transition: transform 200ms ease-in-out;
+}
+
+#settings-heading {
+    height: fit-content;
+    width: 100%;
+}
+
+#settings-heading span {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--txt-dark);
+    text-align: center;
+}
+
+
+
+/* LANGUAGE SELECTION */
+
+#language-container {
+    height: 50%;
+    width: 100%;
+}
+
+#language-container span {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--txt-dark);
+}
+
+#language-container > div {
+    height: fit-content;
+    width: 100%;
+}
+
+#language-img-containers {
+
+}
+
+.language-img-container {
+    height: 35px;
+    width: 35px;
+}
+
+.language-img-container img {
+    cursor: pointer;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 999px;
+    box-shadow: 0 1px 2px 0 hsla(206, 6%, 15%, 0.25), 0 1px 3px 1px hsla(206, 6%, 15%, 0.12);
+    transition: box-shadow var(--transition-fast);
+}
+
+.language-img-container img:hover {
+    box-shadow: 0 1px 2px 0 hsla(206, 6%, 35%, 0.45), 0 1px 3px 1px hsla(206, 6%, 35%, 0.3);
+    transition: box-shadow var(--transition-fast);
+    border: 1px solid var(--clr-nav-active)
+}
+
+
+
+/* DARK MODE SELECTION */
+
+#dark-mode-container {
+    height: 50%;
+    width: 100%;
+}

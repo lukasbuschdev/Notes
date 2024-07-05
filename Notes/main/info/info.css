@@ -1,0 +1,41 @@
+#info-container {
+    height: 100%;
+    padding: 20px;
+}
+
+#info-container span {
+    font-size: 1.4rem;
+    padding: 20px 0;
+}
+
+#info-container a {
+    text-align: center;
+    color: var(--txt-gray);
+    font-weight: 500;
+    font-size: 0.8rem;
+    transition: color var(--transition-medium);
+}
+
+#info-container a:hover {
+    transition: color var(--transition-medium);
+    color: var(--txt-dark);
+}
+
+
+
+/* LEGAL NOTICE AND PRIVACY POLICY SELECTION */
+
+#legal-notice-privacy-container {
+    margin-top: auto;
+}
+
+#legal-notice-privacy-container a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--txt-gray);
+}
+
+#legal-notice-privacy-container a:hover {
+    cursor: pointer;
+    color: var(--clr-dark);
+}
