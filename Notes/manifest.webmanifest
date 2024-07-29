@@ -2,7 +2,7 @@
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
     "display": "fullscreen",
-    "scope": "/",
+    "scope": "/Notes/",
     "start_url": "/Notes/index.html?fullscreen=true",
     "name": "Notes",
     "short_name": "Notes",
